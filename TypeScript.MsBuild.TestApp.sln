@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35017.193
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeScript.MsBuild.TestApp", "TypeScript.MsBuild.TestApp\TypeScript.MsBuild.TestApp.csproj", "{00A9CB5B-B173-454E-A4CB-23FE81AA9EF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibrary", "RazorClassLibrary\RazorClassLibrary.csproj", "{9FAD5F06-AA2F-407F-9078-D5FFD3C7142E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE3BF2C0-BB90-40FF-A8BC-89B0D5CB5764}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00A9CB5B-B173-454E-A4CB-23FE81AA9EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A9CB5B-B173-454E-A4CB-23FE81AA9EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A9CB5B-B173-454E-A4CB-23FE81AA9EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A9CB5B-B173-454E-A4CB-23FE81AA9EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAD5F06-AA2F-407F-9078-D5FFD3C7142E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAD5F06-AA2F-407F-9078-D5FFD3C7142E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAD5F06-AA2F-407F-9078-D5FFD3C7142E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAD5F06-AA2F-407F-9078-D5FFD3C7142E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CAB4BC1-0E2A-49CA-937B-BF2452B82225}
+	EndGlobalSection
+EndGlobal

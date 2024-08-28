@@ -1,0 +1,33 @@
+﻿@inject IJSRuntime _js
+
+@implements IAsyncDisposable
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private IJSObjectReference _module = default!;
+    private int currentCount = 0;
+
+    private async Task IncrementCount()
+    {
+        currentCount++;
+
+        await _module.InvokeVoidAsync("SaveCount", currentCount);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _module = await _js.InvokeAsync<IJSObjectReference>("import", "/_content/RazorClassLibrary/Counter.js");
+
+        currentCount = await _module.InvokeAsync<int>("GetCount");
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await _module.DisposeAsync();
+    }
+}
