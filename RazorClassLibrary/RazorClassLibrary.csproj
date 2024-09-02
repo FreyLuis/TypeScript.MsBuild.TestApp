@@ -6,6 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <TypescriptOutDir>wwwroot</TypescriptOutDir>
+    <PrepareForBuildDependsOn>
+      CompileTypeScript;
+      GetTypeScriptOutputForPublishing;$(PrepareForBuildDependsOn)
+    </PrepareForBuildDependsOn>
+    <TypeScriptModuleKind>ESNext</TypeScriptModuleKind>
+  </PropertyGroup>
+
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
